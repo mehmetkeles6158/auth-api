@@ -1,0 +1,20 @@
+### Users create (signup)
+POST http://localhost:3000/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzUzNjUzMTZ9.qtx7Qf05Aye69ECv57vExZ16-j5_bYhy2N0BQfffLFY
+
+{
+  "name": "Mitchy Batshuayi",
+  "email": "batshuayi@info.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+### Sessions create (login)
+POST http://localhost:3000/sessions
+Content-Type: application/json
+
+{
+  "email": "cylelarin@info.com",
+  "password": "password"
+}
